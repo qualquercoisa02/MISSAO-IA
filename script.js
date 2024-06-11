@@ -1,6 +1,6 @@
 const caixaPrincipal = document.querySelector(".caixa-principal");
 
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaPergunta = document.querySelector(".caixa-pergunta");
 
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 
@@ -8,9 +8,9 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 
 const textoResultado = document.querySelector(".texto-resultado");
 
-const perguntas = [
+const pergunta = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Qual o impacto da Inteligência Artificial na sua vida?",
         alternativas: [
             "Alternativa 1",
             "Alternativa 2"
@@ -27,7 +27,7 @@ const perguntas = [
 let atual = 0;
 let perguntaAtual;
 function mostraPergunta() {
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    perguntaAtual = pergunta[atual];
+    caixaPergunta.textContent = perguntaAtual.enunciado;
 }
 mostraPergunta();
