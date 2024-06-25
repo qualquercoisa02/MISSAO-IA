@@ -1,6 +1,36 @@
-body{
-background-color: rgb(182, 209, 250);
-font-size: large;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: rgb(148, 3, 112);
+:root{
+    --cor-fundo: #01080e;
+    --cor-principal: #0b0d20;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2bdefd;
+    --cor-texto: #D7F9FF;
 }
+
+body{
+    background-color: var(--cor-fundo);
+color: var(--cor-texto);
+display: flex;
+justify-content:center;
+align-items: center;
+min-height: 100vh;
+}
+
+.caixa-principal {
+background-color: var(--cor-fundo);
+width: 90%;
+max-width: 600px;
+text-align: center;
+padding: 20px;
+}
+
+h1 {
+color:var(--cor-destaque)
+}
+
+.caixa-alternativas {
+    background-color: var(--cor-fundo);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    }
